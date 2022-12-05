@@ -4,10 +4,17 @@
   <a href="#books-resources">Resources</a>
 </p>
 
+
+
 > This bootcamp is designed to help familiarize you with GitHub Advanced Security (GHAS) so that you can better understand how to use it in your own repositories.
 
 ## :mega: Prerequisites
 To participate in the workshop you need a GitHub account and need to be invited to the workshop organization [ghas-bootcamp](https://github.com/ghas-bootcamp). If your repository hasn't been automatically created in the workshop organization, either click `Use this template` and create a repository under this organization, or create a new repository and push a copy of the `ghas-bootcamp` repository to an organization with GHAS enabled.
+
+The keys to the AWS instance are:
+AWS_ACCESS_KEY_ID=“AKIAVPTPVSVXOU6WIPF4”
+AWS_SECRET_ACCESS_KEY=‘QAJk/WpNmQk+tJ8r3+boU2qt0vV6AygTMlFdWzHQ’
+
 
 ```bash
 git clone https://github.com/ghas-bootcamp/ghas-bootcamp.git
