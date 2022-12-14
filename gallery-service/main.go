@@ -60,6 +60,26 @@ func GetDb() *sql.DB {
 	return db
 }
 
+func sanitize(username string) string {
+     return html.EscapeString(username) 
+}
+
+
+func serve() {
+	http.HandleFunc("/user", func(w http.ResponseWriter, r *http.Request) {
+		r.ParseForm()
+		username := r.Form.Get("username")
+		if !isValidUsername(username) {
+			// BAD: a request parameter is incorporated without validation into the response
+			fmt.Fprintf(w, "%q is an unknown user", sanitize(username))
+		} else {
+			// TODO: Handle successful login
+		}
+	})
+	http.ListenAndServe(":80", nil)
+}
+
+
 func InitializeDb() {
 	db := GetDb()
 
