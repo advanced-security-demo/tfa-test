@@ -61,7 +61,7 @@ func GetDb() *sql.DB {
 }
 
 func sanitize(username string) string {
-     return html.EscapeString(username) 
+     return username
 }
 
 
